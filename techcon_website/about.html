@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About TechCon 2024</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Header styles */
+        header {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Navigation styles */
+        nav {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0 1.5rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        /* Main content styles */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        
+        article {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        article h2 {
+            color: #1a2a6c;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            border-bottom: 2px solid #fdbb2d;
+            padding-bottom: 0.5rem;
+        }
+        
+        article p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+        
+        /* Image gallery styles */
+        .image-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+        
+        .image-gallery img {
+            width: 30%;
+            min-width: 250px;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .image-gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        /* Mission section styles */
+        .mission-statement {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #1a2a6c;
+            margin: 2rem 0;
+        }
+        
+        .mission-statement p {
+            font-style: italic;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #1a2a6c;
+        }
+        
+        /* Speakers section styles */
+        .speakers-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        
+        .speaker {
+            flex: 1 1 300px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+        
+        .speaker:hover {
+            transform: translateY(-5px);
+        }
+        
+        .speaker img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        .speaker h3 {
+            color: #1a2a6c;
+            margin-bottom: 0.5rem;
+        }
+        
+        .speaker .title {
+            color: #b21f1f;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            font-size: 1rem;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+            
+            article {
+                padding: 1.5rem;
+            }
+            
+            article h2 {
+                font-size: 1.8rem;
+            }
+            
+            .image-gallery img {
+                width: 100%;
+                margin: 0.5rem 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            article h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>About TechCon 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- History Article -->
+        <article id="history">
+            <h2>Our History</h2>
+            <p>TechCon began in 2010 as a small gathering of technology enthusiasts in a community center. What started as a modest event with just 200 attendees has now grown into one of the premier technology conferences in the world, attracting over 10,000 participants annually.</p>
+            
+            <div class="image-gallery">
+                <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="TechCon 2010 - The first conference in a community center">
+                <img src="https://images.unsplash.com/photo-1551818255-e6e109c4c0f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="TechCon 2018 - Conference growth with larger venue">
+                <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="TechCon 2023 - Latest conference with international attendees">
+            </div>
+            
+            <p>Over the years, TechCon has been at the forefront of technological innovation, providing a platform for groundbreaking announcements, product launches, and thought-provoking discussions. Our conference has hosted some of the most influential figures in technology and has been the launchpad for numerous successful startups.</p>
+        </article>
+
+        <!-- Mission Article -->
+        <article id="mission">
+            <h2>Our Mission</h2>
+            <p>At TechCon, our mission is to foster innovation, collaboration, and knowledge sharing within the global technology community. We believe that technology has the power to solve the world's most pressing challenges and improve lives across the globe.</p>
+            
+            <div class="mission-statement">
+                <p>"To create a inclusive platform where technology professionals, enthusiasts, and visionaries can connect, learn, and shape the future together."</p>
+            </div>
+            
+            <p>We are committed to diversity, sustainability, and accessibility in technology. Each year, we strive to create an event that not only showcases cutting-edge technology but also addresses the ethical, social, and environmental implications of technological progress.</p>
+            
+            <div class="image-gallery">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Diverse group of attendees collaborating at TechCon">
+                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Sustainable technology exhibition at TechCon">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Accessibility technology demo at TechCon">
+            </div>
+        </article>
+
+        <!-- Past Speakers Article -->
+        <article id="past-speakers">
+            <h2>Past Notable Speakers</h2>
+            <p>TechCon has been privileged to host some of the most influential and innovative minds in technology. Here are just a few of the remarkable speakers who have graced our stages in previous years:</p>
+            
+            <div class="speakers-container">
+                <div class="speaker">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Dr. Sarah Chen - AI Research Pioneer">
+                    <h3>Dr. Sarah Chen</h3>
+                    <div class="title">AI Research Pioneer</div>
+                    <p>Dr. Chen presented her groundbreaking work on ethical AI frameworks at TechCon 2022. Her research has shaped industry standards for responsible AI development.</p>
+                </div>
+                
+                <div class="speaker">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Marcus Johnson - Quantum Computing Expert">
+                    <h3>Marcus Johnson</h3>
+                    <div class="title">Quantum Computing Expert</div>
+                    <p>At TechCon 2021, Marcus demonstrated the first practical application of quantum computing in cryptography, revolutionizing data security approaches.</p>
+                </div>
+                
+                <div class="speaker">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Priya Sharma - Sustainable Tech Innovator">
+                    <h3>Priya Sharma</h3>
+                    <div class="title">Sustainable Tech Innovator</div>
+                    <p>Priya's 2020 keynote on technology solutions for climate change inspired numerous startups focused on environmental sustainability.</p>
+                </div>
+            </div>
+            
+            <p>These visionaries, along with many others, have made significant contributions to the tech industry and have shared their insights exclusively at TechCon. We continue this tradition in 2024 with an exceptional lineup of speakers who are shaping the future of technology.</p>
+        </article>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; Copyright 2024 TechCon Conference. All rights reserved.</p>
+    </footer>
+</body>
+</html>
